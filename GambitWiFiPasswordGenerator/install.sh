@@ -44,13 +44,16 @@ echo -e "${GREEN}[+] No external Python packages required${NC}"
 echo -e "${GREEN}[*] Setting up GambitWiFiPasswordGenerator...${NC}"
 mkdir -p /opt/gambitwifi 2>/dev/null || sudo mkdir -p /opt/gambitwifi
 
-# Copy main script
+# Copy main script - check for either filename
 if [ -f "./gambitwifi.py" ]; then
     cp gambitwifi.py /opt/gambitwifi/
     echo -e "${GREEN}[+] Main script copied to /opt/gambitwifi/${NC}"
+elif [ -f "./GambitWiFiPasswordGenerator.py" ]; then
+    cp GambitWiFiPasswordGenerator.py /opt/gambitwifi/gambitwifi.py
+    echo -e "${GREEN}[+] Main script copied to /opt/gambitwifi/ (renamed to gambitwifi.py)${NC}"
 else
-    echo -e "${RED}[!] gambitwifi.py not found in current directory${NC}"
-    echo -e "${YELLOW}    Please run installer from the same directory as the script${NC}"
+    echo -e "${RED}[!] Could not find gambitwifi.py or GambitWiFiPasswordGenerator.py${NC}"
+    echo -e "${YELLOW}    Please run installer from the directory containing the script${NC}"
     exit 1
 fi
 
