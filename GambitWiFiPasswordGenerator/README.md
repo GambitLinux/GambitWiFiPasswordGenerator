@@ -7,13 +7,6 @@
 [![Platform](https://img.shields.io/badge/platform-kali%20linux-red)](https://www.kali.org/)
 [![GitHub stars](https://img.shields.io/badge/stars-100%2B-brightgreen)](https://github.com/gambit/gambitwifi)
 [![GitHub issues](https://img.shields.io/badge/issues-0%20open-success)](https://github.com/gambit/gambitwifi/issues)
-
-_    _ _______ _______             _____            
-| |  | (_)  ___(_) ___ \           |  __ \           
-| |  | |_| |_   _| |_/ /_ _ ___ ___| |  \/ ___ _ __  
-| |/\| | |  _| | |  __/ _` / __/ __| | __ / _ \ '_ \ 
-\  /\  / | |   | | | | (_| \__ \__ \ |_\ \  __/ | | |
- \/  \/|_\_|   |_\_|  \__,_|___/___/\____/\___|_| |_|
                                                      
 made by Gambit
 
