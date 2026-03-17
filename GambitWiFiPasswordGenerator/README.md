@@ -63,13 +63,21 @@ The tool combines:
 ### Quick Install (Kali Linux)
 
 ```bash
-# Download the tool
+# 1. Clone the repository
 git clone https://github.com/GambitLinux/GambitWiFiPasswordGenerator.git
+
+# 2. Navigate to the nested folder (where files actually are)
+cd GambitWiFiPasswordGenerator
 cd GambitWiFiPasswordGenerator
 
-# Run installer (as root)
+# 3. Make installer executable
 chmod +x install.sh
+
+# 4. Run installer (as root)
 sudo ./install.sh
 
-# Run the tool
+# 5. Fix Windows line endings (if you get the python3\r error)
+sudo sed -i 's/\r$//' /opt/gambitwifi/gambitwifi.py
+
+# 6. Run the tool
 gambitwifi
