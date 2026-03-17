@@ -1,0 +1,4 @@
+# GambitWiFiPasswordGenerator - Requirements
+# No external dependencies required!
+# This tool uses only Python standard library
+# Works with Python 3.6 and above
